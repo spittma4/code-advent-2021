@@ -13,18 +13,18 @@ $lastWindow = array (
 foreach ($inputArray as $index => $depth) {
 
 	if ($index <=2) {
-        if ($index === 0) {	
+	    if ($index === 0) {	
         	$lastWindow[0] = $depth;
-        } else if ($index === 1) {
-            $lastWindow[1] = $depth;
-        } else if ($index === 2) {
-            $lastWindow[2] = $depth;
+            } else if ($index === 1) {
+                $lastWindow[1] = $depth;
+            } else if ($index === 2) {
+                $lastWindow[2] = $depth;
 
-            // Now get our first window sum
-            $lastWindowSum = array_sum($lastWindow);
-        }
+                // Now get our first window sum
+                $lastWindowSum = array_sum($lastWindow);
+            }
 
-        continue;
+            continue;
     } else {
         // Get our "new" window
         $currentWindow = array (
